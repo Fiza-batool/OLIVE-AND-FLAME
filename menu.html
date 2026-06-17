@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu — Olive & Flame</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ========== NAVBAR (same as index) ========== -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">🔥 Olive <span>&</span> Flame</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+        <a href="about.html#contact" class="btn-reserve">Reserve Table</a>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========== MENU HERO BANNER ========== -->
+    <section
+      class="page-hero"
+      style="
+        background-image: url(&quot;https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&quot;);
+      "
+    >
+      <div class="hero-overlay"></div>
+      <div class="page-hero-content">
+        <p class="section-label">Explore Our Offerings</p>
+        <h1>Our Signature Menu</h1>
+        <p>Crafted with the finest ingredients, every dish tells a story</p>
+      </div>
+    </section>
+
+    <!-- ========== MENU FILTER TABS ========== -->
+    <section class="menu-section">
+      <div class="container">
+        <!-- Category Tabs -->
+        <div class="menu-tabs">
+          <button class="tab-btn active" data-category="all">All Items</button>
+          <button class="tab-btn" data-category="appetizers">Appetizers</button>
+          <button class="tab-btn" data-category="mains">Main Course</button>
+          <button class="tab-btn" data-category="desserts">Desserts</button>
+          <button class="tab-btn" data-category="drinks">Drinks</button>
+        </div>
+
+        <!-- ---- APPETIZERS ---- -->
+        <div class="menu-category" id="appetizers">
+          <h2 class="category-title">
+            <span class="cat-icon">🥗</span> Appetizers
+          </h2>
+          <div class="menu-grid">
+            <div class="menu-card" data-cat="appetizers">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?w=500"
+                  alt="Garlic Bread"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Garlic Bread</h3>
+                  <span class="menu-price">$7.99</span>
+                </div>
+                <p>
+                  Crispy sourdough bread with roasted garlic butter and fresh
+                  herbs, served warm.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag veg">Vegetarian</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-card" data-cat="appetizers">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=500"
+                  alt="Chicken Wings"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Chicken Wings</h3>
+                  <span class="menu-price">$13.99</span>
+                </div>
+                <p>
+                  Crispy fried wings tossed in our signature smoky BBQ or
+                  buffalo sauce. Served with ranch dip.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag spicy">🌶 Spicy</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-card" data-cat="appetizers">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=500"
+                  alt="Bruschetta"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Bruschetta</h3>
+                  <span class="menu-price">$9.99</span>
+                </div>
+                <p>
+                  Toasted baguette slices topped with ripe tomatoes, fresh
+                  basil, and extra virgin olive oil.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag veg">Vegetarian</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-card" data-cat="appetizers">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1604909052743-94e838986d24?w=500"
+                  alt="Calamari"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Crispy Calamari</h3>
+                  <span class="menu-price">$14.99</span>
+                </div>
+                <p>
+                  Lightly battered squid rings, fried golden and served with
+                  marinara and lemon aioli.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag chef">Chef's Pick</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---- MAIN COURSES ---- -->
+        <div class="menu-category" id="mains">
+          <h2 class="category-title">
+            <span class="cat-icon">🍽</span> Main Course
+          </h2>
+          <div class="menu-grid">
+            <div class="menu-card" data-cat="mains">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500"
+                  alt="Steak"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Ribeye Steak</h3>
+                  <span class="menu-price">$34.99</span>
+                </div>
+                <p>
+                  12oz prime ribeye grilled to your preference, with truffle
+                  mashed potatoes and seasonal greens.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag chef">Chef's Pick</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-card" data-cat="mains">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500"
+                  alt="Pizza"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Margherita Pizza</h3>
+                  <span class="menu-price">$18.99</span>
+                </div>
+                <p>
+                  Classic Neapolitan pizza with San Marzano tomatoes, fresh
+                  mozzarella, and fragrant basil.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag veg">Vegetarian</span>
+                  <span class="tag popular">Popular</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-card" data-cat="mains">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?w=500"
+                  alt="Pasta"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Pasta Alfredo</h3>
+                  <span class="menu-price">$16.99</span>
+                </div>
+                <p>
+                  Creamy fettuccine tossed with rich Alfredo sauce, parmesan,
+                  and freshly cracked black pepper.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag veg">Vegetarian</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-card" data-cat="mains">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500"
+                  alt="Burger"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Signature Burger</h3>
+                  <span class="menu-price">$15.99</span>
+                </div>
+                <p>
+                  Juicy beef patty, aged cheddar, caramelized onions, and our
+                  secret sauce on a brioche bun.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag popular">Popular</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-card" data-cat="mains">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500"
+                  alt="Salmon"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Grilled Salmon</h3>
+                  <span class="menu-price">$24.99</span>
+                </div>
+                <p>
+                  Fresh Atlantic salmon, grilled with lemon herb butter and
+                  paired with roasted vegetables.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag chef">Chef's Pick</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-card" data-cat="mains">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500"
+                  alt="Biryani"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Lamb Biryani</h3>
+                  <span class="menu-price">$21.99</span>
+                </div>
+                <p>
+                  Fragrant basmati rice slow-cooked with tender lamb, saffron,
+                  and aromatic whole spices.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag spicy">🌶 Spicy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---- DESSERTS ---- -->
+        <div class="menu-category" id="desserts">
+          <h2 class="category-title">
+            <span class="cat-icon">🍰</span> Desserts
+          </h2>
+          <div class="menu-grid">
+            <div class="menu-card" data-cat="desserts">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500"
+                  alt="Chocolate Cake"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Chocolate Lava Cake</h3>
+                  <span class="menu-price">$10.99</span>
+                </div>
+                <p>
+                  Warm dark chocolate cake with a molten center, served with
+                  vanilla bean ice cream.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag popular">Popular</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-card" data-cat="desserts">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=500"
+                  alt="Cheesecake"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>New York Cheesecake</h3>
+                  <span class="menu-price">$9.99</span>
+                </div>
+                <p>
+                  Classic creamy cheesecake on a buttery graham cracker crust,
+                  topped with fresh berry compote.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag veg">Vegetarian</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-card" data-cat="desserts">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=500"
+                  alt="Tiramisu"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Tiramisu</h3>
+                  <span class="menu-price">$11.99</span>
+                </div>
+                <p>
+                  Traditional Italian dessert with espresso-soaked ladyfingers
+                  and silky mascarpone cream.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag chef">Chef's Pick</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---- DRINKS ---- -->
+        <div class="menu-category" id="drinks">
+          <h2 class="category-title">
+            <span class="cat-icon">☕</span> Drinks
+          </h2>
+          <div class="menu-grid">
+            <div class="menu-card" data-cat="drinks">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500"
+                  alt="Coffee"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Signature Coffee</h3>
+                  <span class="menu-price">$4.99</span>
+                </div>
+                <p>
+                  Our house blend espresso, available as flat white, cappuccino,
+                  or cold brew over ice.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag veg">Vegetarian</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-card" data-cat="drinks">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=500"
+                  alt="Fresh Juice"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Fresh Juice</h3>
+                  <span class="menu-price">$5.99</span>
+                </div>
+                <p>
+                  Cold-pressed juices: orange, watermelon, pineapple, or mixed
+                  tropical — made fresh daily.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag veg">Vegetarian</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-card" data-cat="drinks">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1553530666-cc8ec35f7e2f?w=500"
+                  alt="Smoothie"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Berry Smoothie</h3>
+                  <span class="menu-price">$6.99</span>
+                </div>
+                <p>
+                  Blended strawberries, blueberries, banana, and Greek yogurt —
+                  thick, creamy, and refreshing.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag popular">Popular</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-card" data-cat="drinks">
+              <div class="menu-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1470338745628-171cf53de3a8?w=500"
+                  alt="Lemonade"
+                />
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-top">
+                  <h3>Mint Lemonade</h3>
+                  <span class="menu-price">$4.99</span>
+                </div>
+                <p>
+                  House-made lemonade with fresh mint leaves, a hint of ginger,
+                  and sparkling water.
+                </p>
+                <div class="menu-tags">
+                  <span class="tag veg">Vegetarian</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER (same as index) ========== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3>🔥 Olive & Flame</h3>
+            <p>
+              Authentic flavors, crafted with passion. Serving the city since
+              2018.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="about.html#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 Flame Street, Food City
+            </p>
+            <p><i class="fas fa-phone"></i> +1 (555) 234-5678</p>
+            <p><i class="fas fa-envelope"></i> hello@oliveandflame.com</p>
+            <p><i class="fas fa-clock"></i> Mon–Sun: 11am – 11pm</p>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Get exclusive deals and new dish alerts in your inbox.</p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="Your email address" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 Olive & Flame. All rights reserved. | Designed with ❤️</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
