@@ -23,6 +23,10 @@ A modern, elegant, and responsive restaurant website designed to showcase a prem
 - **JavaScript** — Interactive website functionality
 - **Google Fonts** — Typography
 - **Font Awesome** — Icons
+  ## Website Preview
+
+[![Website Screenshot](homepage.png)](https://olive-and-flame.netlify.app/)
+
 
 ## 📂 Project Structure
 
