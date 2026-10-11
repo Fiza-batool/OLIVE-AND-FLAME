@@ -4,7 +4,7 @@ A modern, elegant, and responsive restaurant website designed to showcase a prem
 
 ## 🌐 Live Demo
 
-**Live Website:** [View Olive & Flame](YOUR_NETLIFY_SITE_URL)
+**Live Website:** [View Olive & Flame](https://olive-and-flame.netlify.app/)
 
 ## ✨ Features
 
